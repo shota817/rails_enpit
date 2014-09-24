@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+- 2.1.1
+- 1.9.3
+- jruby-19mode
+- rbx-2
+deploy:
+  provider: heroku
+  api_key:
+    secure: MF1NShN7rG2wdh2bdwvxtQ/C+i71lxW8jYh617dCAMLWUkh2PrSobv1+MQADxk5yOW85r+T1mIMma9GEbxYs1cYqEL5x+5cSoQ3lU2HOLMcwzFbD2EBuermTXkfy9SeW3zLrZ2szvnm91PBjmRCNSTkJl03+6KMZqD0vQ5n2lHA=
+  app: ancient-scrubland-5768
+  on:
+    repo: shota817/rails_enpit
+    branch: travis
